@@ -1,14 +1,14 @@
 <template>
   <div>
     <h1 class="title is-1">
-      One
+      Two
     </h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'One',
+  name: 'UseE2E',
 };
 </script>
 

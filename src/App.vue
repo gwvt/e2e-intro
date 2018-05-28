@@ -4,10 +4,24 @@
       <aside class="menu">
         <ul class="menu-list">
           <li>
-            <router-link to="/">One</router-link>
+            <router-link to="/">
+              Intro
+            </router-link>
           </li>
           <li>
-            <router-link to="/two">Two</router-link>
+            <router-link to="/ask-web">
+              How Important is E2E Testing?
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/use-e2e">
+              E2E Testing and Your Development Workflow
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/tools">
+              Tools for E2E Testing
+            </router-link>
           </li>
         </ul>
       </aside>
@@ -48,6 +62,10 @@ $link-focus-border: $info;
 @import "~bulma";
 @import "~bulmaswatch/darkly/_overrides";
 @import "~buefy/src/scss/buefy";
+
+li {
+  font-size: 1.5rem;
+}
 
 .side {
   padding: 5rem 0 0 3rem;
