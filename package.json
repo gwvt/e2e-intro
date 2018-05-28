@@ -22,6 +22,7 @@
     "@vue/cli-service": "^3.0.0-beta.11",
     "@vue/eslint-config-airbnb": "^3.0.0-beta.11",
     "node-sass": "^4.9.0",
+    "prettier": "^1.12.0",
     "sass-loader": "^7.0.1",
     "vue-template-compiler": "^2.5.16"
   },
