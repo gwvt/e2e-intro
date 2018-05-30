@@ -10,7 +10,9 @@ module.exports = {
   'and tries to enter letters in the Nightwatch input': (browser) => {
     browser
       .waitForElementVisible('#Nightwatch-input', 5000)
+      // set value of input
       .setValue('#Nightwatch-input', 'words')
+      // assert value of input equals
       .assert.value('#Nightwatch-input', '');
   },
 
@@ -21,6 +23,7 @@ module.exports = {
       .setValue('#Protractor-input', '3')
       .setValue('#Cypress-input', '7')
       .waitForElementVisible('#winner-message', 5000)
+      // assert element contains text
       .assert.containsText('#winner-message', 'Tonight\'s winner is Nightwatch!')
       .end();
   },

@@ -1,12 +1,12 @@
+/* eslint-disable no-unused-vars */
+
 module.exports = {
   // add before hook
-  /* eslint-disable-next-line no-unused-vars */
   before: (browser) => {
     console.log('Running tests...');
   },
 
   // add beforeEach hook
-  /* eslint-disable-next-line no-unused-vars */
   beforeEach: (browser) => {
     console.log('Will it pass?');
   },
@@ -16,7 +16,7 @@ module.exports = {
       .url(process.env.VUE_DEV_SERVER_URL)
       .waitForElementVisible('#use-e2e-link', 5000)
       .click('#use-e2e-link')
-      // test url
+      // assert url contains
       .assert.urlContains('use-e2e')
       .waitForElementVisible('#use-e2e-page', 5000);
   },
@@ -26,8 +26,10 @@ module.exports = {
       .waitForElementVisible('#uses-0', 5000)
       .assert.cssClassNotPresent('#uses-0', 'strikethrough')
       .click('#uses-0', () => {
+        // add additional logging with callback
         console.log('user clicks on text');
       })
+      // assert css class present
       .assert.cssClassPresent('#uses-0', 'strikethrough');
   },
 
@@ -36,6 +38,7 @@ module.exports = {
       .click('#uses-0', () => {
         console.log('user clicks on text');
       })
+      // assert css class not present
       .assert.cssClassNotPresent('#uses-0', 'strikethrough')
       .end();
   },
