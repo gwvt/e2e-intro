@@ -14,7 +14,8 @@
         </div>
         <div class="column is-4">
           <b-field>
-            <b-input :id="`${f.name}-input`" placeholder="enter number" v-model="f.number" type="number"/>
+            <b-input :id="`${f.name}-input`" placeholder="enter number"
+            v-model="f.number" type="number"/>
         </b-field>
         </div>
       </div>
