@@ -7,7 +7,6 @@ module.exports = {
       .click('.button')
       .pause(400)
       .assert.visible('img')
-      // move
       .getAttribute('#image-link', 'href', function test(result) {
         this.assert.ok(result.value.indexOf('strongloop') !== -1, 'link contains strongloop');
       })

@@ -10,7 +10,7 @@ module.exports = {
   'answer #1 image shows': (browser) => {
     browser
       .moveToElement('#image-area-1', 10, 10)
-      .pause(400)
+      .waitForElementVisible('#answer-1', 5000)
       .assert.elementPresent('#answer-1')
       .assert.elementNotPresent('#answer-2');
   },
@@ -18,7 +18,7 @@ module.exports = {
   'answer #2 image shows': (browser) => {
     browser
       .moveToElement('#image-area-2', 10, 10)
-      .pause(400)
+      .waitForElementVisible('#answer-2', 5000)
       .assert.elementPresent('#answer-2')
       .assert.elementNotPresent('#answer-1')
       .end();
