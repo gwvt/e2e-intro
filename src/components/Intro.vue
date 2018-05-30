@@ -12,7 +12,7 @@
       <div class="columns">
         <div class="column is-offset-1">
           <h2 class="title is-2">
-            front-end application > API calls > back-end application > data store
+            front-end application ↔ API calls ↔ back-end application ↔ data store
           </h2>
         </div>
       </div>

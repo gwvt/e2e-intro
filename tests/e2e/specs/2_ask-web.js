@@ -12,7 +12,6 @@ module.exports = {
     browser
       // hover over element
       .moveToElement('#image-area-1', 10, 10)
-      .waitForElementVisible('#answer-1', 5000)
       // assert element is present
       .assert.elementPresent('#answer-1')
       // assert element is not present
@@ -22,7 +21,6 @@ module.exports = {
   'and hovers over image 2': (browser) => {
     browser
       .moveToElement('#image-area-2', 10, 10)
-      .waitForElementVisible('#answer-2', 5000)
       .assert.elementPresent('#answer-2')
       .assert.elementNotPresent('#answer-1')
       .end();

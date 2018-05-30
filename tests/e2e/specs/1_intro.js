@@ -14,7 +14,7 @@ module.exports = {
       .assert.visible('img')
       // test attribute of element with callback
       .getAttribute('#image-link', 'href', function test(result) {
-        this.assert.ok(result.value.indexOf('strongloop') !== -1, 'link contains strongloop');
+        this.assert.ok(result.value.indexOf('strongloop.com') !== -1, 'link contains "strongloop.com"');
       })
       // end session
       .end();

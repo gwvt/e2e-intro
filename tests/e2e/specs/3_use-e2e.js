@@ -23,23 +23,23 @@ module.exports = {
 
   'and clicks on "regression testing" text': (browser) => {
     browser
-      .waitForElementVisible('#uses-0', 5000)
-      .assert.cssClassNotPresent('#uses-0', 'strikethrough')
-      .click('#uses-0', () => {
+      .waitForElementVisible('#uses-1', 5000)
+      .assert.cssClassNotPresent('#uses-1', 'strikethrough')
+      .click('#uses-1', () => {
         // add additional logging with callback
-        console.log('user clicks on text');
+        console.log('user clicks on "regression testing"');
       })
       // assert css class present
-      .assert.cssClassPresent('#uses-0', 'strikethrough');
+      .assert.cssClassPresent('#uses-1', 'strikethrough');
   },
 
   'and clicks on "regression testing" text again': (browser) => {
     browser
-      .click('#uses-0', () => {
-        console.log('user clicks on text');
+      .click('#uses-1', () => {
+        console.log('user clicks on "regression testing" again');
       })
       // assert css class not present
-      .assert.cssClassNotPresent('#uses-0', 'strikethrough')
+      .assert.cssClassNotPresent('#uses-1', 'strikethrough')
       .end();
   },
 };

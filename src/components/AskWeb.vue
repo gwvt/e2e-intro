@@ -11,8 +11,8 @@
     <div class="columns">
       <div class="column is-half image-area is-centered-vertically-horizontally" id="image-area-1"
       @mouseover="showImage(1)" @mouseout="hideImage(1)">
-      <div v-if="showAnswer[1]">
-        <img src="../../static/e1.png" id="answer-1" alt="answer-1">
+      <div v-if="showAnswer[1]" id="answer-1">
+        <img src="../../static/e1.png" alt="answer-1">
         <a href="https://medium.freecodecamp.org/why-end-to-end-testing-is-important-for-your-team-cb7eb0ec1504">
           medium.freecodecamp.org
         </a>
@@ -23,8 +23,8 @@
     </div>
     <div class="column is-half image-area is-centered-vertically-horizontally" id="image-area-2"
     @mouseover="showImage(2)" @mouseout="hideImage(2)">
-    <div v-if="showAnswer[2]">
-      <img src="../../static/e2.png" id="answer-2" alt="answer-2">
+    <div v-if="showAnswer[2]" id="answer-2">
+      <img src="../../static/e2.png" alt="answer-2">
       <a href="https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html">
         testing.googleblog.com
       </a>

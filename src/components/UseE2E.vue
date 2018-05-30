@@ -2,7 +2,7 @@
   <div id="use-e2e-page">
     <div class="text-area">
       <h1 class="title is-1">
-        You can use end-to-end testing for...
+        End-to-end testing can be useful for
       </h1>
       <div class="columns">
         <div class="column is-offset-1">
@@ -16,7 +16,7 @@
     </div>
     <div class="text-area">
       <h1 class="title is-1">
-        But not so much for...
+        But probably less useful for
       </h1>
       <div class="columns">
         <div class="column is-offset-1">
@@ -37,31 +37,25 @@ export default {
     return {
       uses: [
         {
+          text: 'smoke tests',
+          class: {
+            strikethrough: false,
+          },
+        },
+        {
           text: 'regression testing',
           class: {
             strikethrough: false,
           },
         },
         {
-          text: 'quality control',
+          text: 'validating functionality from the user\'s perspective',
           class: {
             strikethrough: false,
           },
         },
         {
-          text: 'validation of user experience',
-          class: {
-            strikethrough: false,
-          },
-        },
-        {
-          text: 'integration of all systems',
-          class: {
-            strikethrough: false,
-          },
-        },
-        {
-          text: 'smoke tests',
+          text: 'testing integration across components, layers, and systems',
           class: {
             strikethrough: false,
           },
@@ -69,7 +63,25 @@ export default {
       ],
       notUses: [
         {
-          text: 'fast iteration / validation during development',
+          text: 'quick feedback during development',
+          class: {
+            strikethrough: false,
+          },
+        },
+        {
+          text: 'identifying where something is broken',
+          class: {
+            strikethrough: false,
+          },
+        },
+        {
+          text: 'complete coverage',
+          class: {
+            strikethrough: false,
+          },
+        },
+        {
+          text: 'low-maintenance, non-fragile testing',
           class: {
             strikethrough: false,
           },

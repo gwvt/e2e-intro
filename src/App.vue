@@ -15,12 +15,12 @@
           </li>
           <li class="menu-item">
             <router-link to="/use-e2e" id="use-e2e-link">
-              Development Workflow
+              Using E2E In Your Workflow
             </router-link>
           </li>
           <li class="menu-item">
             <router-link to="/tools" id="tools-link">
-              Frameworks
+              Testing Frameworks
             </router-link>
           </li>
         </ul>
