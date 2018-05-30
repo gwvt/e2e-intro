@@ -1,15 +1,16 @@
 <template>
   <div>
-    <h1 class="title is-1">
-      Frameworks for end-to-end testing
-    </h1>
-    <h2>
-      How many have used the following frameworks?
-    </h2>
+    <div class="text-area">
+      <h2 class="title is-2">
+        How many have used the following frameworks?
+      </h2>
+    </div>
     <template v-for="f in frameworks">
       <div class="columns" :key="f.name">
         <div class="column is-4">
-          {{ f.name }}
+          <h4 class="title is-4">
+            {{ f.name }}
+          </h4>
         </div>
         <div class="column is-4">
           <b-field>
@@ -42,10 +43,6 @@ export default {
         },
         {
           name: 'Protractor',
-          number: null,
-        },
-        {
-          name: 'Jest',
           number: null,
         },
         {
