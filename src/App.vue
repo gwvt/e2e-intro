@@ -1,32 +1,32 @@
 <template>
   <div id="app" class="columns">
-    <div class="column is-2 side">
+    <div class="column is-3 side">
       <aside class="menu">
         <ul class="menu-list">
-          <li>
-            <router-link to="/">
-              Intro
+          <li class="menu-item">
+            <router-link to="/" id="intro-link">
+              E2E
             </router-link>
           </li>
-          <li>
-            <router-link to="/ask-web">
-              How Important is E2E Testing?
+          <li class="menu-item">
+            <router-link to="/ask-web" id="ask-web-link">
+              How Important Is It?
             </router-link>
           </li>
-          <li>
-            <router-link to="/use-e2e">
-              E2E Testing and Your Development Workflow
+          <li class="menu-item">
+            <router-link to="/use-e2e" id="use-e2e-link">
+              Development Workflow
             </router-link>
           </li>
-          <li>
-            <router-link to="/tools">
-              Tools for E2E Testing
+          <li class="menu-item">
+            <router-link to="/tools" id="tools-link">
+              Frameworks
             </router-link>
           </li>
         </ul>
       </aside>
     </div>
-    <div class="column is-10 main">
+    <div class="column is-9 main">
       <router-view :key="$route.path" />
     </div>
   </div>
@@ -68,10 +68,21 @@ li {
 }
 
 .side {
-  padding: 5rem 0 0 3rem;
+  margin: 12rem 0 0 1rem;
 }
 
 .main {
-  padding: 2rem;
+  margin-top: 8rem;
+}
+
+.is-centered-vertically-horizontally {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-area {
+  margin-bottom: 3rem;
+  padding-right: 2rem;
 }
 </style>
