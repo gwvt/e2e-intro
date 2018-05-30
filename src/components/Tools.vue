@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="tools-page">
     <div class="text-area">
       <h2 class="title is-2">
         How many have used the following frameworks?
@@ -14,13 +14,13 @@
         </div>
         <div class="column is-4">
           <b-field>
-            <b-input placeholder="enter number" v-model="f.number" type="number"/>
+            <b-input :id="`${f.name}-input`" placeholder="enter number" v-model="f.number" type="number"/>
         </b-field>
         </div>
       </div>
     </template>
     <div v-if="allNumbersEntered">
-      <h2 class="title is-2">
+      <h2 class="title is-2" id="winner-message">
         Tonight's winner is {{ winner }}!
       </h2>
     </div>

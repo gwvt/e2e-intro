@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="use-e2e-page">
     <div class="text-area">
       <h1 class="title is-1">
         You can use end-to-end testing for...
