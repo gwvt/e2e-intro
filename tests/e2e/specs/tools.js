@@ -1,5 +1,5 @@
 module.exports = {
-  'page loads': (browser) => {
+  'user navigates to tools page': (browser) => {
     browser
       .url(process.env.VUE_DEV_SERVER_URL)
       .waitForElementVisible('#tools-link', 5000)
@@ -7,14 +7,14 @@ module.exports = {
       .waitForElementVisible('#tools-page', 5000);
   },
 
-  'validation of number input works': (browser) => {
+  'and tries to enter letters in the Nightwatch input': (browser) => {
     browser
       .waitForElementVisible('#Nightwatch-input', 5000)
       .setValue('#Nightwatch-input', 'words')
       .assert.value('#Nightwatch-input', '');
   },
 
-  'page logic works': (browser) => {
+  'and enters numbers in all inputs, with the largest number in the Nightwatch input': (browser) => {
     browser
       .setValue('#Nightwatch-input', '10')
       .setValue('#WebdriverIO-input', '2')

@@ -1,5 +1,5 @@
 module.exports = {
-  'page loads and behaves as expected': (browser) => {
+  'user navigates to page and clicks on view pyramid button': (browser) => {
     browser
       .url(process.env.VUE_DEV_SERVER_URL)
       .waitForElementVisible('#intro-page', 5000)

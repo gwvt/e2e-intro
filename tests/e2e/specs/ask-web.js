@@ -1,5 +1,5 @@
 module.exports = {
-  'page loads correctly': (browser) => {
+  'user navigates to ask-web page': (browser) => {
     browser
       .url(process.env.VUE_DEV_SERVER_URL)
       .waitForElementVisible('#ask-web-link', 5000)
@@ -7,7 +7,7 @@ module.exports = {
       .waitForElementVisible('#ask-web-page', 5000);
   },
 
-  'answer #1 image shows': (browser) => {
+  'and hovers over image 1': (browser) => {
     browser
       .moveToElement('#image-area-1', 10, 10)
       .waitForElementVisible('#answer-1', 5000)
@@ -15,7 +15,7 @@ module.exports = {
       .assert.elementNotPresent('#answer-2');
   },
 
-  'answer #2 image shows': (browser) => {
+  'and hovers over image 2': (browser) => {
     browser
       .moveToElement('#image-area-2', 10, 10)
       .waitForElementVisible('#answer-2', 5000)
