@@ -4,6 +4,9 @@
       <h1 class="title is-1">
         End-to-end testing can be useful for
       </h1>
+      <p>
+        (click on items to cross out)
+      </p>
       <div class="columns">
         <div class="column is-offset-1">
           <h3 v-for="(e,i) in uses" :key="e.text"

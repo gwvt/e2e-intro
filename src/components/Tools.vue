@@ -2,7 +2,7 @@
   <div id="tools-page">
     <div class="text-area">
       <h2 class="title is-2">
-        How many have used the following frameworks?
+        How many of you have used the following frameworks?
       </h2>
     </div>
     <template v-for="f in frameworks">
