@@ -4,7 +4,7 @@
       <h1 class="title is-1">
         End-to-end testing can be useful for
       </h1>
-      <p>
+      <p class="text-note">
         (click on items to cross out)
       </p>
       <div class="columns">
@@ -103,5 +103,9 @@ export default {
 <style lang="scss" scoped>
 .strikethrough {
   text-decoration: line-through;
+}
+
+.text-note {
+  margin-bottom: 1rem;
 }
 </style>
